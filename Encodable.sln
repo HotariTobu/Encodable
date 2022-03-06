@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Encodable", "Encodable\Encodable.shproj", "{944A2548-1BFE-46C0-9CED-12CD96F17AFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample_Encodable", "Sample_Encodable\Sample_Encodable.csproj", "{9924B7CA-6BE0-4B67-9173-88D679D118EB}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Encodable\Encodable.projitems*{944a2548-1bfe-46c0-9ced-12cd96f17afc}*SharedItemsImports = 13
+		Encodable\Encodable.projitems*{9924b7ca-6be0-4b67-9173-88d679d118eb}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9924B7CA-6BE0-4B67-9173-88D679D118EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9924B7CA-6BE0-4B67-9173-88D679D118EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9924B7CA-6BE0-4B67-9173-88D679D118EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9924B7CA-6BE0-4B67-9173-88D679D118EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {824D3AF9-55F4-409C-B925-28867053D2E5}
+	EndGlobalSection
+EndGlobal

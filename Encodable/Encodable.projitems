@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>944a2548-1bfe-46c0-9ced-12cd96f17afc</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Encodable</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CodingProperties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICodable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DecodableExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EncodableExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICodableExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TypeExtension.cs" />
+  </ItemGroup>
+</Project>
