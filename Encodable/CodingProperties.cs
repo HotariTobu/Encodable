@@ -5,7 +5,7 @@ namespace Encodable
     /**
      * <summary>Have properties associated with encoding and decoding.</summary>
      */
-    internal static class CodingProperties
+    public static class CodingProperties
     {
         /**
          * <summary>Represents the prefix used when encoding <see cref="ICodable"/>. Fields in <see cref="ICodable"/> with the name starting with the prefix are encoded.</summary>

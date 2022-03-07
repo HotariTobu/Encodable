@@ -3,7 +3,7 @@
     /**
      * <summary>Represents structural binary data.</summary>
      */
-    internal class Data
+    public class Data
     {
         /**
          * <summary>Raw bytes.</summary>

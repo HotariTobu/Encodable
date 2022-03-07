@@ -5,7 +5,7 @@ namespace Encodable
     /**
      * <summary>Extends <see cref="Type"/></summary>
      */
-    internal static class TypeExtension
+    public static class TypeExtension
     {
         /**
          * <summary>Gets encode method corresponds to specified type.</summary>

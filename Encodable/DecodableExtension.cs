@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Encodable
 {
-    internal static class DecodableExtension
+    public static class DecodableExtension
     {
         /**
          * <summary>Decodes <see cref="Data"/> to <see cref="bool"/></summary>

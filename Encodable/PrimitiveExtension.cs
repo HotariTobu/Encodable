@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Encodable
 {
-    internal static class PrimitiveEncodableExtension
+    public static class PrimitiveEncodableExtension
     {
         public static byte[] Encode(this int value)
         {

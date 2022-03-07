@@ -2,7 +2,7 @@
 
 namespace Sample_Encodable
 {
-    internal class Sample1
+    public class Sample1
     {
         class Model : ICodable
         {

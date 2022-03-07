@@ -6,7 +6,7 @@ namespace Encodable
     /**
      * <summary>Extends <see cref="ICodable"/></summary>
      */
-    internal static class ICodableExtension
+    public static class ICodableExtension
     {
         /**
          * <summary>Loads <see cref="ICodable"/> from specified <see cref="Uri"/>.</summary>

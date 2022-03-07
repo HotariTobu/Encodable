@@ -6,7 +6,7 @@ namespace Encodable
     /**
      * <summary>Extends <see cref="Data"/></summary>
      */
-    internal static class DataExtension
+    public static class DataExtension
     {
         /**
          * <summary>Loads <see cref="Data"/> from specified <see cref="Uri"/>.</summary>

@@ -28,7 +28,7 @@ namespace Sample_Encodable
         }
     }
 
-    internal class Sample4
+    public class Sample4
     {
         class Model : ICodable
         {
