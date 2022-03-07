@@ -1,4 +1,8 @@
-﻿namespace Encodable
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Encodable
 {
     /**
      * <summary>Represents structural binary data.</summary>
