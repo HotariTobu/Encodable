@@ -167,7 +167,7 @@ Usable collections have these constraints.
 
 `Data` class wrap byte collection.
 
-![](img/Data_Image.png)
+![](img/data.png)
 
 Refer to `Data.RawBytes` when you operate bytes. 
 
