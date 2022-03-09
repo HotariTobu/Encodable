@@ -66,7 +66,7 @@ Model model = await uri.LoadAsync<Model>();
 
 ### Structural Object
 
-Model objects can contain the below type fields.
+Model objects can contain fields of the below type.
 
 - Primitives (`bool`, `char`, `double`, `Half`, `short`, `int`, `long`, `float`, `ushort`, `uint`, `ulong`)
 - `string`
