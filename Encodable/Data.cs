@@ -17,7 +17,7 @@ namespace Encodable
          * <summary>The content bytes without data of count or length.</summary>
          * <exception cref="ArgumentNullException"></exception>
          */
-        public ReadOnlySpan<byte> Bytes => RawBytes.Skip(8).ToArray();
+        public byte[] Bytes => RawBytes.Skip(8).ToArray();
 
         /**
          * <summary>Initialize with specified bytes.</summary>
