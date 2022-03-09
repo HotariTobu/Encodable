@@ -12,7 +12,7 @@ C# didn't have any united interface to I/O objects. We had to implement some loa
 - Encode = Object -> `Data`
 - Decode = `Data` -> Object
 - Load = Some resource -> `Data` or Object
-- Save = `Data` Object -> Some resource
+- Save = `Data` or Object -> Some resource
 
 ## Demo
 
