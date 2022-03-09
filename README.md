@@ -1,9 +1,38 @@
-# Encodable = En + Codable
-`Encodable` enable objects to be encoded, decoded, loaded and saved.
+Encodable = En + Codable
+====
 
-# How To Use
+`Encodable` enables objects to be encoded, decoded, loaded and saved.
 
-## Save and Load
+## Description
+
+C# didn't have any united interface to I/O objects. We had to implement some loader and saver when we want to store and restore data. Most of you may have used System.IO.File or System.Xml.XmlDocument and so on. Encodable gives you a very simple interface for data management like Swift's Codable protocol.
+
+### Word definitions
+
+- Encode = Object -> `Data`
+- Decode = `Data` -> Object
+- Load = Some resource -> `Data` or Object
+- Save = `Data` Object -> Some resource
+
+## Demo
+
+![](img/demo.gif)
+
+## VS. 
+
+### `System.Runtime.Serialization`
+
+For more formats (e.g. JSON, XML, etc.), you should use `System.Runtime.Serialization`. `Encodable` provides only byte sequence functions.
+
+## Requirement
+
+`Encodable` is written with .NET 6.0 C# so reqires .NET 6.0.
+
+However, you can adapt to older frameworks to fix the code.
+
+## Usage
+
+### Make Objects Codable
 
 First, implement `ICodable` to the model object. Fields whose name starts with `_` are subject to search. `ICodable` objects must have a constructor without parameters.
 
@@ -35,7 +64,7 @@ Uri uri = new Uri(Path.GetFullPath("file.binary"));
 Model model = await uri.LoadAsync<Model>();
 ```
 
-## Structural Object
+### Structural Object
 
 Model objects can contain the below type fields.
 
@@ -65,7 +94,7 @@ class SubModel : ICodable
 }
 ```
 
-### Prefix
+### Change Prefix
 
 You can also change the field search condition. Update `CodingProperties.Prefix` before loading and saving.
 
@@ -82,7 +111,7 @@ class Model : ICodable
 CodingProperties.Prefix = "Encodable";
 ```
 
-## Other than `ICodable`
+### Define Custom Encoder and Decoder
 
 Do you want to use more types? You can define custom encoders and decoders. Define and register them before encoding and decoding.
 
@@ -125,9 +154,7 @@ class Model : ICodable
 CodingProperties.AddCoder<Person>(PersonExtension.Encode, PersonExtension.Decode);
 ```
 
-Custom coding is faster than `ICodable` coding. Of cource, you can put this `Person` into some collection, too.
-
-## More Options
+Custom coding is faster than `ICodable` coding. Of course, you can put this `Person` into some collection, too.
 
 ### Collections
 
@@ -142,10 +169,26 @@ Usable collections have these constraints.
 
 ![](img/Data_Image.png)
 
-Refer `Data.RawBytes` when you operate bytes. Word definitions are below.
+Refer to `Data.RawBytes` when you operate bytes. 
 
-- Encode = Object -> `Data`
-- Decode = `Data` -> Object
-- Load = Some resource -> `Data` or Object
-- Save = `Data` Object -> Some resource
+## Install
 
+1. Clone or download the vs shared project.
+2. Add `Encodable` to your solution.
+3. Add a reference to `Encodable` in your project.
+
+## Contribution
+
+1. Fork it ( https://github.com/HotariTobu/Encodable )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
+
+## Licence
+
+[UNLICENCE](LICENCE)
+
+## Author
+
+[HotariTobu](https://github.com/HotariTobu)
