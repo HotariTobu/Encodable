@@ -12,7 +12,7 @@ C# didn't have any united interface to I/O objects. We had to implement some loa
 - Encode = Object -> `Data`
 - Decode = `Data` -> Object
 - Load = Some resource -> `Data` or Object
-- Save = `Data` Object -> Some resource
+- Save = `Data` or Object -> Some resource
 
 ## Demo
 
@@ -28,7 +28,7 @@ For more formats (e.g. JSON, XML, etc.), you should use `System.Runtime.Serializ
 
 `Encodable` is written with .NET 6.0 C# so reqires .NET 6.0.
 
-However, you can adapt to older frameworks to fix the code.
+However, you can fix the code and can adapt to older frameworks.
 
 ## Usage
 
@@ -66,7 +66,7 @@ Model model = await uri.LoadAsync<Model>();
 
 ### Structural Object
 
-Model objects can contain the below type fields.
+Model objects can contain fields of the below type.
 
 - Primitives (`bool`, `char`, `double`, `Half`, `short`, `int`, `long`, `float`, `ushort`, `uint`, `ulong`)
 - `string`
