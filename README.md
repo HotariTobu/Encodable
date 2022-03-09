@@ -28,7 +28,7 @@ For more formats (e.g. JSON, XML, etc.), you should use `System.Runtime.Serializ
 
 `Encodable` is written with .NET 6.0 C# so reqires .NET 6.0.
 
-However, you can adapt to older frameworks to fix the code.
+However, you can fix the code and can adapt to older frameworks.
 
 ## Usage
 
