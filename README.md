@@ -187,7 +187,7 @@ Refer to `Data.RawBytes` when you operate bytes.
 
 ## Licence
 
-[UNLICENCE](LICENCE)
+[Unlicense](LICENSE)
 
 ## Author
 
