@@ -1,5 +1,4 @@
-Encodable = En + Codable
-====
+# Encodable = En + Codable
 
 `Encodable` enables objects to be encoded, decoded, loaded and saved.
 
